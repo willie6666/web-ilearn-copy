@@ -11,6 +11,28 @@
     <link rel="stylesheet" type="text/css" href="all.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
+        html, body {
+            height: 100%;
+        }
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        #page-wrapper {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+        #page {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+        #page-footer {
+            margin-top: auto;
+        }
         .navbar .dropdown-menu { display: none; }
         .navbar .dropdown-menu.show { display: block; }
         .cookie-bar {
