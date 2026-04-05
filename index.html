@@ -35,6 +35,35 @@
         }
         .navbar .dropdown-menu { display: none; }
         .navbar .dropdown-menu.show { display: block; }
+        body#page-site-index nav.navbar .top-nav-links {
+            display: flex !important;
+            align-items: center;
+            margin-left: 0.5rem;
+        }
+        body#page-site-index nav.navbar .top-nav-links .top-nav-list {
+            display: flex !important;
+            flex-direction: row;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            gap: 0.25rem;
+        }
+        body#page-site-index nav.navbar .top-nav-links .top-nav-item {
+            display: block !important;
+            position: relative;
+        }
+        body#page-site-index nav.navbar .top-nav-links .top-nav-anchor {
+            display: block !important;
+            color: #1d2125;
+            padding: 0.75rem 0.9rem;
+            white-space: nowrap;
+            text-decoration: none;
+        }
+        body#page-site-index nav.navbar .top-nav-links .top-nav-anchor.active {
+            color: #99000F;
+            font-weight: 500;
+        }
         .cookie-bar {
             position: fixed;
             bottom: 0;
@@ -168,14 +197,14 @@
         <img src="assets/moodle4_log.jpg" class="logo mr-1" alt="iLearn">
     </a>
 
-    <div class="primary-navigation">
-        <nav class="moremenu navigation">
-            <ul class="nav more-nav navbar-nav" role="menubar">
-                <li class="nav-item" role="none">
-                    <a role="menuitem" class="nav-link active" href="index.html" aria-current="true">首頁</a>
+    <div class="top-nav-links" aria-label="主選單">
+        <nav>
+            <ul class="top-nav-list" role="menubar">
+                <li class="dropdown top-nav-item" role="none">
+                    <a role="menuitem" class="top-nav-anchor active" href="index.html" aria-current="true">首頁</a>
                 </li>
-                <li class="dropdown nav-item" role="none">
-                    <a class="dropdown-toggle nav-link" id="dropLearning" role="menuitem" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                <li class="dropdown top-nav-item" role="none">
+                    <a class="dropdown-toggle top-nav-anchor" id="dropLearning" role="menuitem" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
                         學習資源
                     </a>
                     <div class="dropdown-menu" role="menu" aria-labelledby="dropLearning">
@@ -187,8 +216,8 @@
                         <a class="dropdown-item" role="menuitem" href="#">校園智慧財產權宣導</a>
                     </div>
                 </li>
-                <li class="dropdown nav-item" role="none">
-                    <a class="dropdown-toggle nav-link" id="dropQA" role="menuitem" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                <li class="dropdown top-nav-item" role="none">
+                    <a class="dropdown-toggle top-nav-anchor" id="dropQA" role="menuitem" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
                         Q&amp;A
                     </a>
                     <div class="dropdown-menu" role="menu" aria-labelledby="dropQA">
